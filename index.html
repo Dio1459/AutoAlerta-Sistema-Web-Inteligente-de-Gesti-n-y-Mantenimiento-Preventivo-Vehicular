@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AutoAlerta | Control de mantenimiento</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>AutoAlerta</h1>
+      <p>Registra vehículos y consulta su estado de mantenimiento preventivo.</p>
+    </header>
+
+    <main>
+      <section aria-labelledby="registro-titulo">
+        <h2 id="registro-titulo">Registrar vehículo</h2>
+        <form id="formulario-vehiculo">
+          <label>
+            Placa
+            <input
+              id="placa"
+              name="placa"
+              required
+              minlength="6"
+              maxlength="8"
+              pattern="[A-Z0-9]{6,8}"
+              title="La placa debe tener entre 6 y 8 caracteres: solo letras mayúsculas y números."
+              autocomplete="off"
+            >
+          </label>
+          <label>
+            Marca
+            <select id="marca" name="marca" required>
+              <option value="">Selecciona una marca</option>
+            </select>
+          </label>
+          <label>
+            Modelo
+            <select id="modelo" name="modelo" required disabled>
+              <option value="">Selecciona un modelo</option>
+            </select>
+          </label>
+          <label>
+            Kilometraje actual
+            <input name="kilometrajeActual" type="number" min="0" step="1" required>
+          </label>
+          <label>
+            Estado del aceite
+            <select name="aceite" required>
+              <option>En buen estado</option>
+              <option>Revisar pronto</option>
+              <option>Pendiente</option>
+            </select>
+          </label>
+          <label>
+            Estado de los frenos
+            <select name="frenos" required>
+              <option>En buen estado</option>
+              <option>Revisar pronto</option>
+              <option>Pendiente</option>
+            </select>
+          </label>
+          <button id="registrar" type="submit" disabled>Registrar vehículo</button>
+        </form>
+        <p id="mensaje" role="status" aria-live="polite"></p>
+      </section>
+
+      <section aria-labelledby="vehiculos-titulo">
+        <h2 id="vehiculos-titulo">Vehículos registrados</h2>
+        <div id="lista-vehiculos" aria-live="polite"></div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+{
+  "marcas": {
+    "Toyota": ["Corolla", "Hilux", "Yaris"],
+    "Honda": ["Civic", "CR-V", "Fit"],
+    "Nissan": ["Sentra", "Versa", "Frontier"],
+    "Chevrolet": ["Aveo", "Onix", "S10"],
+    "Volkswagen": ["Jetta", "Tiguan", "Polo"]
+  },
+  "vehiculos": [
+    {
+      "placa": "ABC123",
+      "marca": "Toyota",
+      "modelo": "Corolla",
+      "kilometrajeActual": 45000,
+      "ultimoMantenimientoKm": 40000,
+      "piezas": {
+        "aceite": "Pendiente",
+        "frenos": "En buen estado"
+      }
+    },
+    {
+      "placa": "DEF456",
+      "marca": "Honda",
+      "modelo": "Civic",
+      "kilometrajeActual": 28000,
+      "ultimoMantenimientoKm": 20000,
+      "piezas": {
+        "aceite": "En buen estado",
+        "frenos": "Revisar pronto"
+      }
+    },
+    {
+      "placa": "GHI789",
+      "marca": "Nissan",
+      "modelo": "Versa",
+      "kilometrajeActual": 12000,
+      "ultimoMantenimientoKm": 10000,
+      "piezas": {
+        "aceite": "En buen estado",
+        "frenos": "En buen estado"
+      }
+    }
+  ]
+}

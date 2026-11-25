@@ -1,0 +1,128 @@
+:root {
+  color-scheme: light;
+  font-family: system-ui, sans-serif;
+  color: #172554;
+  background: #f1f5f9;
+}
+
+body {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+h1,
+h2 {
+  color: #1d4ed8;
+}
+
+form,
+.tabla-vehiculos {
+  padding: 1.25rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.75rem;
+  background: white;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 1rem;
+}
+
+label {
+  display: grid;
+  gap: 0.35rem;
+}
+
+input,
+select,
+button {
+  min-height: 2.5rem;
+  padding: 0.4rem 0.65rem;
+  font: inherit;
+}
+
+button {
+  align-self: end;
+  border: 0;
+  border-radius: 0.4rem;
+  color: white;
+  background: #1d4ed8;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: wait;
+  opacity: 0.6;
+}
+
+#lista-vehiculos {
+  overflow-x: auto;
+}
+
+.tabla-vehiculos {
+  width: 100%;
+  border-collapse: collapse;
+  padding: 0;
+  text-align: left;
+}
+
+.tabla-vehiculos caption {
+  padding: 0.75rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+.tabla-vehiculos th,
+.tabla-vehiculos td {
+  padding: 0.75rem;
+  border-top: 1px solid #cbd5e1;
+  vertical-align: top;
+}
+
+.tabla-vehiculos th {
+  background: #e2e8f0;
+}
+
+.tabla-vehiculos td small {
+  display: block;
+  margin-top: 0.25rem;
+  color: #475569;
+}
+
+.etiqueta-estado {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.35rem;
+  font-weight: 700;
+}
+
+.estado-verde {
+  color: #166534;
+  background: #dcfce7;
+}
+
+.estado-amarillo {
+  color: #854d0e;
+  background: #fef3c7;
+}
+
+.estado-rojo {
+  color: #991b1b;
+  background: #fee2e2;
+}
+
+.error {
+  color: #b91c1c;
+  font-weight: 700;
+}
+
+.exito {
+  color: #15803d;
+  font-weight: 700;
+}
+
+#mensaje {
+  min-height: 1.5rem;
+}
